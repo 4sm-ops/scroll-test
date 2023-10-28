@@ -264,4 +264,4 @@ class ZeruisConfig:
 
 
 class DeployerConfig:
-    use_0x_bytecode = True
+    use_0x_bytecode = False

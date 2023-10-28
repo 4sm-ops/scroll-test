@@ -4,6 +4,7 @@ from src.modules.deploy.utils.data_exctract import (
     get_bytecode,
     get_abi,
     compile_contract,
+    compile_random_contact,
 )
 
 
@@ -17,7 +18,7 @@ class Deployer(Account):
 
     def deploy(self) -> None:
         if not self.use_0x_bytecode:
-            compile_contract()
+            compile_random_contact()
             abi = get_abi()
             bytecode = get_bytecode()
         else:
